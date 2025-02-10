@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Palatino, "Palatino Linotype", serif;
+    font-style: italic;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.login {
+    background-color: rgb(255, 134, 154);
+    width: 50%;
+    height: 65%;
+    border-radius: 10px;
+    display: flex;
+}
+.image{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+.image>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.toEnter{
+    width: 50%;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+}
+.inputPwd{
+    width: 100%;
+    height: 15%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #ff9bab;
+    border-radius: 10px;
+
+}
+.inputPwd i{
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.inputPwd > input{
+    width: 80%;
+    padding: 15px 15px;
+    font-size: 1.4rem;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+input::placeholder{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+.typePwd{
+    width: 100%;
+    /* display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 65%;
+    
+}
+
+button{
+    width: 30%;
+    height:20%;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background-color: hsl(350, 100%, 64%);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button:hover{
+    background-color: hsl(330, 100%, 53%);
+}
+button:active{
+    transform: scale(1.1);
+}
+#LoginBtn{
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+}
+
+.heart{
+    top: -100px;
+    position: absolute;
+    user-select: none;
+    color: rgb(255, 0, 200) ;
+}
+.error{
+    animation: shaking .3s forwards;
+}
+@keyframes shaking{
+
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+
+}
+
+@keyframes falling{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(110vh)  rotate(360deg);
+        opacity: 0;
+    }
+}

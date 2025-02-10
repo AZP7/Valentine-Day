@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Palatino, "Palatino Linotype", serif;
+    font-style: italic;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    position: relative;
+}
+.firstSection {
+    border-radius: 10px;
+    /* display: none; */
+    width: 70%;
+    height: 80%;
+    background-color: rgb(255, 223, 228);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header{
+    padding: 10px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.imgN{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.imgN img{
+    height: 50px;
+    width: 50px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+.imgN h1{
+    background-color: pink;
+    color: #ff008c;
+    padding: 15px 30px;
+    border-radius: 30px;
+}
+.header #YearMonth{
+    color: #ff008c;
+    font-size: 4rem;
+    margin-top: 20px;
+}
+.ralationTime {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+.ralationTime>div{
+    width: 200px;
+    text-align: center;
+}
+.ralationTime>div p:first-child{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #ff008c;
+
+}
+.ralationTime>div p:last-child{
+    font-size: 1.3rem;
+    color: #ff008c;
+}
+button{
+    margin-top: 60px;
+    padding: 15px 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: pink;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #ff008c;
+}
+.arrow{
+    transition: all .6s ease;
+}
+button:hover .arrow{
+
+    transform: translateX(10px);
+
+}
+button:active{
+    transform: scale(1.1);
+}
